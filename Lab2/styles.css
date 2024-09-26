@@ -1,0 +1,128 @@
+.cabecalho {
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
+  margin-top: 1.5em;
+}
+
+main {
+  background: rgb(32, 22, 32);
+  background: rgb(32, 22, 32);
+  background: linear-gradient(
+    156deg,
+    rgba(32, 22, 32, 1) 91%,
+    rgba(98, 3, 104, 1) 100%
+  );
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+a:visited {
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+
+body,
+header {
+  margin: 0;
+}
+
+header {
+  height: 30em;
+  background-image: url("/Lab2/assets/img/wk2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about {
+  display: flex;
+  gap: 1.2em;
+  padding: 2em 8em;
+
+  color: white;
+}
+
+.about h2 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.about img {
+  width: 25em;
+  height: 35em;
+  border-radius: 5%;
+
+  -webkit-box-shadow: 5px 5px 91px 0px rgba(107, 4, 107, 1);
+  -moz-box-shadow: 5px 5px 91px 0px rgba(107, 4, 107, 1);
+  box-shadow: 5px 5px 91px 0px rgba(107, 4, 107, 1);
+}
+
+.localization {
+  
+}
+
+.localization {
+  margin: 0;
+  padding: 2em;
+  color: white;
+}
+
+.localization h2 {
+  margin: 0;
+  color: white;
+}
+
+.multimedia {
+  color: white;
+  padding: 1em;
+}
+
+.multimedia div {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.multimedia img {
+  height: 15em;
+  width: 15em;
+}
+
+.information  {
+  color: white;
+  padding: 1em;
+}
