@@ -1,1 +1,74 @@
-.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Wukanda</title>
+</head>
+
+<body>
+    <h2>Visit Wukanda</h2>
+    <form action="https://postman-echo.com/get" method="get"
+        style="border-radius: 10px;padding: 1em; background-color: rgb(214, 214, 214);">
+        <fieldset style="margin-bottom: .5em;">
+            <legend for="">Dados Pessoais</legend>
+            <div>
+                <label for="firstName">Nome</label> <br>
+                <input placeholder="Digite o seu nome" name="firstName" type="text" required>
+            </div>
+            <div>
+                <label for="lastName">
+                    Apelido
+                </label> <br>
+                <input placeholder="Digite o seu apelido" name="lastName" type="text" required>
+            </div>
+
+
+            <div>
+                <label for="email">
+                    Email
+                </label> <br>
+                <input placeholder="Digite o seu email" name="email" type="email" required>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>More info</legend>
+            <label for="dartureDate">Data de partida</label>
+            <input type="date" name="" id=""> <br>
+            <label for="returnDate">Data de regresso</label>
+            <input type="date" name="" id=""> <br>
+            <label for="NumPass">Numero de Passageiros</label>
+            <input type="number" min="50" max="200" name="" id="">
+
+        </fieldset>
+
+        <fieldset style="margin-bottom: .5em;">
+            <legend for="">Meio de transporte favorito</legend> <br>
+            <span>Carro</span> <input type="radio" value="car" name="isolation" id="isolation" required>
+            <span>Comboio</span> <input type="radio" name="isolation" value="train" id="isolation" required>
+            <span>Avião</span> <input type="radio" value="airPlain" name="isolation" id="isolation" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual o serviço que deseja na sua viagem?</legend>
+            <span>Basico</span> <input type="radio" value="car" name="service" id="isolation" required>
+            <span>Premium</span> <input type="radio" name="service" value="train" id="isolation" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pedidos especiais</legend>
+            <div>
+                <textarea placeholder="Digite aqui" name="PedidosEspeciais" id=""></textarea>
+            </div>
+            <br>
+            <label for="">Qual o valor que espera gastar por pessoa e por dia na sua viagem</label>
+            <input type="number" name="valuePerPerson" min="100" max="1000">
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

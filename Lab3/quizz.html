@@ -4,52 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QUIZZ Wukanda</title>
 </head>
 
 <body>
     <h2>QUIZZ</h2>
-    <form action="" style="border-radius: 10px;padding: 1em; background-color: rgb(214, 214, 214);">
+    <form action="https://postman-echo.com/get" method="get"
+        style="border-radius: 10px;padding: 1em; background-color: rgb(214, 214, 214);">
+        <fieldset style="margin-bottom: .5em;">
+            <legend for="">Dados Pessoais</legend>
+            <div>
+                <label for="firstName">Nome</label> <br>
+                <input placeholder="Digite o seu nome" name="firstName" type="text" required>
+            </div>
+            <div>
+                <label for="lastName">
+                    Apelido
+                </label> <br>
+                <input placeholder="Digite o seu apelido" name="lastName" type="text" required>
+            </div>
+
+
+            <div>
+                <label for="email">
+                    Email
+                </label> <br>
+                <input placeholder="Digite o seu email" name="email" type="email" required>
+            </div>
+
+        </fieldset>
+
+        </fieldset>
+
         <fieldset style="margin-bottom: .5em;">
             <legend for="">Onde Wakanda está localizada?</legend> <br>
-            <span>América do Sul</span> <input value="americaSul" type="radio" name="localization" id="localization">
-            <span>Europa</span> <input type="radio" name="localization" value="europa" id="localization">
-            <span>África</span> <input value="africa" type="radio" name="localization" id="localization">
-            <span>Ásia</span> <input value="asia" type="radio" name="localization" id="localization">
+            <span>América do Sul</span> <input value="americaSul" type="radio" name="localization" id="localization"
+                required>
+            <span>Europa</span> <input type="radio" name="localization" value="europa" id="localization" required>
+            <span>África</span> <input value="africa" type="radio" name="localization" id="localization" required>
+            <span>Ásia</span> <input value="asia" type="radio" name="localization" id="localization" required>
         </fieldset>
 
         <fieldset style="margin-bottom: .5em;">
             <legend for="">Qual é o nome do metal raro encontrado em Wakanda?</legend> <br>
-            <span>Adamantium</span> <input value="adamantium" type="radio" name="rare_metal" id="rare_metal">
-            <span>Vibranium</span> <input value="vibranium" type="radio" name="rare_metal" id="rare_metal">
-            <span>Ouro</span> <input value="ouro" type="radio" name="rare_metal" id="rare_metal">
-            <span>Urânio</span> <input value="ouro" type="radio" name="rare_metal" id="rare_metal">
+            <span>Adamantium</span> <input value="adamantium" type="radio" name="rare_metal" id="rare_metal" required>
+            <span>Vibranium</span> <input value="vibranium" type="radio" name="rare_metal" id="rare_metal" required>
+            <span>Ouro</span> <input value="ouro" type="radio" name="rare_metal" id="rare_metal" required>
+            <span>Urânio</span> <input value="uranio" type="radio" name="rare_metal" id="rare_metal" required>
         </fieldset>
 
         <fieldset style="margin-bottom: .5em;">
             <legend for="">Quem é o governante e protetor de Wakanda?</legend> <br>
             <div>
                 <span>Pantera Negra</span>
-                <input type="radio" name="rare_metal" id="rare_metal">
+                <input type="radio" name="protetor" value="BlackPhanter" id="protetor">
             </div>
             <div>
-                <span>Capitão América</span> <input type="radio" name="rare_metal" id="rare_metal">
+                <span>Capitão América</span> <input type="radio" value="CapAmerica" name="protetor" id="protetor"
+                    required>
             </div>
             <div>
-                <span>Homem de Ferro</span> <input type="radio" name="rare_metal" id="rare_metal">
+                <span>Homem de Ferro</span> <input type="radio" value="ironMan" name="protetor" id="protetor" required>
             </div>
-            <span>Thor</span> <input type="radio" name="rare_metal" id="rare_metal">
+            <span>Thor</span> <input type="radio" value="thor" name="protetor" id="protetor" required>
         </fieldset>
 
         <fieldset style="margin-bottom: .5em;">
             <legend for="">Como Wakanda mantém seu isolamento do mundo exterior?</legend> <br>
-            <span>Tecnologia de camuflagem avançada</span> <input type="radio" name="isolation" id="isolation">
-            <span>Exército poderoso</span> <input type="radio" name="isolation" id="isolation">
-            <span>Cercada por desertos intransponíveis</span> <input type="radio" name="isolation" id="isolation">
-            <span>Não está isolada</span> <input type="radio" name="isolation" id="isolation">
+            <span>Tecnologia de camuflagem avançada</span> <input type="radio" value="camuflagem" name="isolation"
+                id="isolation" required>
+            <span>Exército poderoso</span> <input type="radio" name="isolation" value="StrongArmy" id="isolation"
+                required>
+            <span>Cercada por desertos intransponíveis</span> <input type="radio" value="cercada" name="isolation"
+                id="isolation" required>
+            <span>Não está isolada</span> <input type="radio" value="notIsolated" name="isolation" id="isolation"
+                required>
         </fieldset>
-
-
+        <button type="submit">Enviar</button>
     </form>
 </body>
 
