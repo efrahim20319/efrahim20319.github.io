@@ -1,0 +1,6 @@
+.mainSection {
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    height: 80vh;
+}

@@ -1,0 +1,18 @@
+<!-- <h1>Efrahim</h1>
+    <p>Eis a minha pagina</p>
+    <p>Na unidade curricular de <a href="https://moodle.ensinolusofona.pt/course/view.php?id=28717"
+            target="_blank">DIW</a></p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React e NextJS</li>
+    </ul>
+    <p>Iremos criar solucoes criativas</p>
+    <img src="https://1027650668-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZhqVlTYfnrwtrIyeFF9N%2Fuploads%2F4t8FDtcIbGeer8scCLc9%2Fdiw.svg?alt=media&token=0f1a9bf4-40af-4b6b-b919-bacebe938101" alt="Era suposto ter uma imagem">
+    <ul>
+        <li><a href="/">Open Lab 1</a>Conhecer a internet</li>
+        <li><a href="/Lab2/index.html">Open Lab 2</a>HTML "A minha cidade"</li>
+        <li><a href="/Lab3/index.html">Open Lab 3</a>Formularios</li>
+        <li><a href="/Lab4/index.html">Open Lab 4</a>Cidade estilizada com seletores (avaliado por pares)</li>
+    </ul> -->

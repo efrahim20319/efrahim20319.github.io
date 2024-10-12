@@ -1,32 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/sideBar.css" />
+    <link rel="stylesheet" href="./assets/styles/mainSection.css" />
+    <link rel="stylesheet" href="./assets/styles/mainContent.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <h1>Efrahim</h1>
-    <p>Eis a minha pagina</p>
-    <p>Na unidade curricular de <a href="https://moodle.ensinolusofona.pt/course/view.php?id=28717"
-            target="_blank">DIW</a></p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-        <li>React e NextJS</li>
-    </ul>
-    <p>Iremos criar solucoes criativas</p>
-    <img src="https://1027650668-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZhqVlTYfnrwtrIyeFF9N%2Fuploads%2F4t8FDtcIbGeer8scCLc9%2Fdiw.svg?alt=media&token=0f1a9bf4-40af-4b6b-b919-bacebe938101" alt="Era suposto ter uma imagem">
-    <ul>
-        <li><a href="/">Open Lab 1</a>Conhecer a internet</li>
-        <li><a href="/Lab2/index.html">Open Lab 2</a>HTML "A minha cidade"</li>
-        <li><a href="/Lab3/index.html">Open Lab 3</a>Formularios</li>
-        <li><a href="/Lab4/index.html">Open Lab 4</a>Cidade estilizada com seletores (avaliado por pares)</li>
-    </ul>
-</body>
-
+  <body>
+    <section class="mainSection">
+      <aside class="sideBar">
+        <div class="sideBar__header">
+          <img draggable="false" src="/assets/images/programmer.gif" alt="" />
+        </div>
+        <div class="sideBar__list">
+          <a href="/" target="_blank">
+            <div class="sideBar__item">
+              <h3 class="sideBar__item__title">Lab 1</h3>
+              <span class="sideBar__item__description"
+                >Conhecer a internet</span
+              >
+            </div>
+          </a>
+          <a href="/Lab2/index.html" target="_blank">
+            <div class="sideBar__item">
+              <h3 class="sideBar__item__title">Lab 2</h3>
+              <span class="sideBar__item__description"
+                >HTML "A minha cidade</span
+              >
+            </div>
+          </a>
+          <a href="/Lab3/index.html" target="_blank">
+            <div class="sideBar__item">
+              <h3 class="sideBar__item__title">Lab 3</h3>
+              <span class="sideBar__item__description">Formularios</span>
+            </div>
+          </a>
+          <a href="/Lab4/index.html" target="_blank">
+            <div class="sideBar__item">
+              <h3 class="sideBar__item__title">Lab 4</h3>
+              <span class="sideBar__item__description"
+                >Cidade estilizada com seletores</span
+              >
+            </div>
+          </a>
+        </div>
+      </aside>
+      <main class="mainContent">
+        <div class="mainContent__banner">
+          <img draggable="false" src="/assets/images/gif3.gif" alt="" />
+        </div>
+        <h1 class="mainContent__title1">Desenvolvemento de interfaces web</h1>
+        <p>
+          Esta disciplina oferece uma introdução abrangente ao desenvolvimento
+          de interfaces web, abordando os princípios fundamentais e as
+          tecnologias que possibilitam a criação de websites modernos, dinâmicos
+          e responsivos. No final do curso, os estudantes serão capazes de
+          desenvolver interfaces interativas e eficientes, utilizando as
+          melhores práticas e ferramentas da indústria.
+        </p>
+        <h2 class="mainContent__title2">Programa</h2>
+        <ul >
+          <li>
+            <span>A Internet e a Web</span>
+            <ul >
+              <li>O que faz funcionar a Web</li>
+            </ul>
+          </li>
+          <li>
+            <strong>HTML</strong><br />
+            <ul>
+              <li>Para estruturar conteúdos multimédia</li>
+            </ul>
+          </li>
+          <li>
+            <span>CSS</span><br />
+            <ul>
+              <li>Para estilizar conteúdos</li>
+              <li>Layouts interactivos para interfaces responsivos</li>
+            </ul>
+          </li>
+          <li>
+            <span>JavaScript</span>
+            <ul>
+              <li>Programação orientada a eventos</li>
+              <li>Interfaces dinâmicos, reativos e personalizados</li>
+              <li>Interação com APIs</li>
+            </ul>
+          </li>
+          <li>
+            <span>Next.js</span>
+            <ul>
+              <li>Framework baseado em React</li>
+              <li>Desenvolvimento de Componentes</li>
+              <li>Roteamento e renderização otimizada</li>
+            </ul>
+          </li>
+        </ul>
+      </main>
+    </section>
+  </body>
 </html>
