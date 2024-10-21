@@ -57,6 +57,47 @@ body {
     color: white;
 }
 
-@media screen and () {
-	
+.floatble {
+	display: none;
+}
+
+@media only screen and (max-width: 600px) { 
+	body {
+		padding: 1em;
+		position: relative;
+	}
+	.floatble {
+		display: flex;
+		position: fixed;
+		bottom: 1em;
+		left: calc(100vw - 7em);
+	}
+
+	.drop-content {
+		background-color: rgba(0, 0, 0, 0.815);
+		margin-right: 0em;
+		padding: 1em;
+		border-radius: 10px;
+	}
+
+
+	.drop-content {
+		display: none;
+	}
+
+	.dropdown:hover .drop-content {
+		display: block;
+	}
+
+	.floatble img {
+		height: 4em;
+		margin-top: 1em;
+		border-radius: 50%;
+		box-shadow: 0 0 5px 3px #302e2f, 0 0 5px 6px #4e323d, 0 0 5px 9px #8e3044;
+	}
+
+	.floatble a {
+		color: white;
+		text-decoration: none;
+	}
 }
