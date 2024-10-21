@@ -22,17 +22,20 @@ a {
   text-decoration: none;
   list-style: none;
   font-size: 1.2em;
+
 }
 
+
 .navLink {
-  padding: 0.5em;
+  padding: .5em;
   color: white;
-  transition: background-color 0.3s ease-in;
+  transition: background-color .3s ease-in;
   border-radius: 10px;
 }
 
 .navLink:hover {
-  background-color: rgb(87, 58, 114);
+  background-color: rgb(87, 58, 114);  
+  
 }
 
 a:visited {
@@ -51,12 +54,11 @@ header {
 }
 
 header {
-  height: 35em;
+  height: 30em;
   background-image: url("/Lab2/assets/img/wk2.jpg");
-  background-position: 90% 100%;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
 }
 
@@ -111,6 +113,8 @@ body {
     rgba(32, 22, 32, 1) 91%,
     rgba(98, 3, 104, 1) 100%
   );
+  
+  
 }
 
 .localization {
@@ -139,6 +143,7 @@ body {
 .multimedia div {
   display: flex;
   justify-content: space-between;
+
 }
 
 .multimedia img {
@@ -146,7 +151,7 @@ body {
   width: 15em;
 }
 
-.information {
+.information  {
   color: white;
   padding: 1em;
   background: rgb(32, 22, 32);
