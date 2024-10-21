@@ -85,7 +85,7 @@ body {
 		display: none;
 	}
 
-	.dropdown:active .drop-content {
+	.dropdown:hover .drop-content {
 		display: block;
 	}
 
