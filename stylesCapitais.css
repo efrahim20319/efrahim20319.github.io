@@ -1,0 +1,106 @@
+.cabecalho {
+  display: flex;
+  width: auto;
+  height: 5em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  margin: 0;
+  background-color: #f5f5f4;
+  border: 0.5px solid rgb(228, 228, 228);
+  position: sticky;
+  font-family: sans-serif;
+}
+
+.cabecalho ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+  align-items: center;
+}
+
+.cabecalho ul a {
+  text-decoration: none;
+  color: rgb(121, 120, 120);
+  font-weight: bolder;
+}
+
+.cabecalho h1 {
+  font-weight: bolder;
+  margin: 0;
+}
+
+.poema {
+  background-color: #add8e6;
+  height: calc(100vh - 5em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poema div {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.poema div p {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.poema div span {
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+
+.paisagem {
+    background-image: url("/assets/images/chamomile-8102907_1280.jpg");
+    background-attachment: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.paisagem span {
+    color: white;
+    position: absolute;
+    right: 3em;
+    bottom: 3em;
+    font-family: sans-serif;
+    font-size: 1.7em;
+}
+
+#capitais {
+    background-color: #8b8b8b;
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    
+}
+
+.capital {
+    display: flex;
+    align-items: center;
+    height: 3em;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.capital img {
+    height: 3em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.capital div {
+    padding: 1em;
+}
