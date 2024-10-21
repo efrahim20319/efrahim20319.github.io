@@ -99,5 +99,7 @@ body {
 	.floatble a {
 		color: white;
 		text-decoration: none;
+		padding: 1em;
+		display: block;
 	}
 }
