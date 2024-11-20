@@ -1,0 +1,26 @@
+#navPrincipal {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: blueviolet;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+#navPrincipal h1 {
+    font-size: 1.5em;
+}
+
+#navPrincipal__list {
+    display: flex;
+    gap: 1em;
+}
+
+.produtos {
+    height: 100vh;
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
