@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./normalise.css" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./produto.css" />
+    <script defer src="./main.js" type="module"></script>
   </head>
   <body>
     <header>
       <nav id="navPrincipal">
         <h1>LOJA</h1>
         <ul id="navPrincipal__list">
-          <li>PRODUTOS</li>
-          <li>CESTO</li>
+          <li><a href="#allProducts">PRODUTOS</a></li>
+          <li><a href="#selecionados">CESTO</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Selecione os seus produtos</h1>
-      <section class="produtos">
-        <article class="produto">
-          <h3>Watch</h3>
-          <div class="produto__imageContainer"></div>
-          <span class="produto__price">Custo total: 22.3€</span>
-          <p class="produto__description"></p>
-          <button>Adicionar ao cesto</button>
-        </article>
+      <h1 class="mainTitle">Selecione os seus produtos</h1>
+      <section class="produtos" id="allProducts">
+        
       </section>
     </main>
+    <section id="selectedProducts">
+      <h1 class="mainTitle">Produtos Selecionados</h1>
+      <section class="produtos" id="selecionados">
+      </section>
+      <h1 class="mainTitle" id="custoTotal"></h1>
+    </section>
+    <footer>2024</footer>
   </body>
 </html>

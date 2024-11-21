@@ -1,7 +1,7 @@
 .sideBar {
   background-color: #302e2f;
   width: 25%;
-  height: calc(100% - 2em);
+  height: fit-content;
   padding: 1em;
   border-radius: 10px;
   display: flex;
