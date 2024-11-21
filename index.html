@@ -75,33 +75,32 @@
           <a href="lab7/index.html" target="_blank">
             <div class="sideBar__item">
               <h3 class="sideBar__item__title">Lab 7</h3>
-              <span class="sideBar__item__description"
-                >Javascript</span
-              >
+              <span class="sideBar__item__description">Javascript</span>
             </div>
           </a>
           <a href="/lab8/index.html" target="_blank">
             <div class="sideBar__item">
               <h3 class="sideBar__item__title">Lab 8</h3>
-              <span class="sideBar__item__description"
-                >Javascript Parte 2</span
-              >
+              <span class="sideBar__item__description">Javascript Parte 2</span>
             </div>
           </a>
           <a href="/lab9/index.html" target="_blank">
             <div class="sideBar__item">
               <h3 class="sideBar__item__title">Lab 9</h3>
-              <span class="sideBar__item__description"
-                >Loja Online</span
-              >
+              <span class="sideBar__item__description">Loja Online</span>
             </div>
           </a>
-          
         </div>
       </aside>
       <main class="mainContent">
         <div class="mainContent__banner">
-          <img draggable="false" src="/assets/images/gif3.gif" alt="" />
+          <img
+            draggable="false"
+            id="mainImage"
+            src="/assets/images/background_gifs/"
+            alt=""
+          />
+          <span>Faça varios refresh da pagina</span>
         </div>
         <h1 class="mainContent__title1">Desenvolvimento de interfaces web</h1>
         <p>
@@ -166,5 +165,57 @@
         <img draggable="false" src="/assets/images/programmer.gif" alt="" />
       </div>
     </div>
+    <script>
+      const img = document.querySelector("img#mainImage");
+      img.src += String(1 + Math.floor(Math.random() * 19)) + ".gif";
+
+      function getPredominantColor(image) {
+        // Create a canvas
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+
+        // Set canvas size to the image dimensions
+        canvas.width = image.width;
+        canvas.height = image.height;
+
+        // Draw the image onto the canvas
+        ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+        // Get image data
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const { data } = imageData;
+
+        // Object to store color counts
+        const colorCounts = {};
+        let maxCount = 0;
+        let predominantColor = "";
+
+        // Iterate through pixels
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i];
+          const g = data[i + 1];
+          const b = data[i + 2];
+          const color = `${r},${g},${b}`;
+
+          // Count occurrences of each color
+          colorCounts[color] = (colorCounts[color] || 0) + 1;
+
+          // Track the most frequent color
+          if (colorCounts[color] > maxCount) {
+            maxCount = colorCounts[color];
+            predominantColor = color;
+          }
+        }
+
+        return `rgb(${predominantColor})`;
+      }
+
+      const image = document.getElementById("mainImage");
+      image.onload = () => {
+        const predominantColor = getPredominantColor(image);
+        console.log("Predominant Color:", predominantColor);
+        document.body.style.backgroundColor = predominantColor; // Example usage
+      };
+    </script>
   </body>
 </html>
