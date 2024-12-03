@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./normalise.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./produto.css" />
+    <script defer src="./main.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navPrincipal">
+        <h1>LOJA</h1>
+        <ul id="navPrincipal__list">
+          <li><a href="#allProducts">PRODUTOS</a></li>
+          <li><a href="#selecionados">CESTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="mainTitle">Selecione os seus produtos</h1>
+      <section class="filterSection" id="filters">
+        <div class="filter_sub">
+          <form action="">
+            <label>Filtrar</label>
+            <select name="category" id="categorySelect">
+              <option selected value="all">Todas as categorias</option>
+              <option value="T-shirts">T-shirts</option>
+              <option value="Canecas">Canecas</option>
+              <option value="Meias">Meias</option>
+            </select>
+          </form>
+        </div>
+        <div class="filter_sub">
+          <form action="">
+            <label>Ordenar</label>
+            <select name="price" id="orderSelect">
+              <option selected value="none">Ordenar pelo preço</option>
+              <option value="1">Preço decrescente</option>
+              <option value="2">Preço crescente</option>
+            </select>
+          </form>
+        </div>
+        <div class="filter_sub">
+          <form action="">
+            <label>Ordenar</label>
+            <input id="inputPesquisar" type="text" placeholder="perquisar">
+          </form>
+        </div>
+      </section>
+      <section class="produtos" id="allProducts"></section>
+    </main>
+    <section id="selectedProducts">
+      <h1 class="mainTitle">Produtos Selecionados</h1>
+      <section class="produtos" id="selecionados"></section>
+      <!-- <h1 class="mainTitle"></h1> -->
+      <section class="checkout">
+        <h2 style="font-weight: bold;" id="custoTotal">Custo total: </h2>
+        <form id="checkboxForm" action="">
+          <p>És estudante do DEISI <input type="checkbox" name="deisiStudent" id="deisiStudent"></p> 
+          <p>Cupão de desconto <input id="discount" type="text"></p>
+          <button type="submit">Comprar</button>
+        </form>
+        <div id="payInfo" style="display: none;">
+          <p style="font-weight: bold;">Valor final a pagar (com eventuais descontos): <span id="finalPrice"></span>€</p>
+          <p>Referencia de pagamento: <span id="paymentReference"></span></p>
+        </div>
+      </section>
+    </section>
+    <footer>2024</footer>
+  </body>
+</html>
