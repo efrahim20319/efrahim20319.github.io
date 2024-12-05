@@ -41,6 +41,7 @@ main {
   grid-template-rows: 0.5fr;
   grid-auto-columns: 1fr;
   gap: 1em;
+  margin: 1em;
 }
 
 #selectedProducts {
